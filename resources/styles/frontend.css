@@ -1,0 +1,14 @@
+.bfb-message{
+    display: block;
+    padding: 10px 15px;
+    background-color: #eee;
+    color: #222;
+}
+.bfb-message--success{
+    background-color: #d6ffd6;
+    color: #117711;
+}
+.bfb-message--error{
+    background-color: #ffd6d6;
+    color: #7c1212;
+}

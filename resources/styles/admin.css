@@ -1,0 +1,3 @@
+.booking_page_form_builder .form-builder>ul.frmb,.booking_page_form_builder .form-builder>.cb-wrap{
+    min-height: calc(100vh - 50px) !important;
+}
