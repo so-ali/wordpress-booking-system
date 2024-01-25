@@ -40,7 +40,7 @@ function bfb_register_booking_post_type()
         'map_meta_cap' => true,
     );
 
-    register_post_type('booking', $args);
+    register_post_type('bhub-booking', $args);
 }
 
 /**
@@ -50,7 +50,7 @@ function bfb_register_booking_post_type()
  */
 function bfb_register_booking_metabox()
 {
-    add_meta_box('booking_information', esc_html__('Information', 'bfb'), 'bfb_view_booking_metabox', 'booking', 'normal');
+    add_meta_box('booking_information', esc_html__('Information', 'bfb'), 'bfb_view_booking_metabox', 'bhub-booking', 'normal');
 }
 
 /**

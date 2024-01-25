@@ -27,7 +27,7 @@ class Form_Builder
     public function register_sub_menu()
     {
         add_submenu_page(
-            'edit.php?post_type=booking', esc_html__('Form Builder', 'bfb'), esc_html__('Form Builder', 'bfb'), 'manage_options', 'form_builder', array($this, 'content')
+            'edit.php?post_type=bhub-booking', esc_html__('Form Builder', 'bfb'), esc_html__('Form Builder', 'bfb'), 'manage_options', 'form_builder', array($this, 'content')
         );
     }
 
@@ -39,7 +39,7 @@ class Form_Builder
     public function enqueue()
     {
         $screen = get_current_screen();
-        if ($screen->id !== 'booking_page_form_builder') {
+        if ($screen->id !== 'bhub-booking_page_form_builder') {
             return;
         }
         wp_enqueue_script('bfb-jquery-ui', BFB_RESOURCES_URL . '/scripts/jquery-ui.min.js', ['jquery'], BFB_VERSION);

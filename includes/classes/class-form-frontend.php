@@ -107,7 +107,7 @@ class Form_Frontend
 
         $post_data = array(
             'post_title' => esc_html__('New booking', 'bfb') . ' ' . $booking_details[0]['value'],
-            'post_type' => 'booking',
+            'post_type' => 'bhub-booking',
             'post_status' => 'publish',
             'meta_input' => array(
                 'form_data' => $booking_details
